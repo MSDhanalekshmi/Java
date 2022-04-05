@@ -1,0 +1,39 @@
+Check whether the number is prime or not
+
+// Solution 
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Solution{
+
+pubilc static void main(String [] args)
+
+{
+    Scanner input = new Scanner(System.in);
+    int n = input.nextInt();
+
+    int div = 2;
+    boolean isPrime = true;
+
+    while(div < Math.sqrt(n) )
+    {
+        if(div % 2 == 0)
+        {
+            isPrime = false;
+        }
+    
+        div += 1;
+    }
+    if(isPrime)
+    {
+        System.out.println("Prime");
+
+    }
+    else
+    {
+        System.out.println("Non Prime");
+    }
+}
+
+}
